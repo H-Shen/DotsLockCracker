@@ -1,4 +1,4 @@
-### Atomic Heart Dots Unlocker (Command Line Version)
+### Atomic Heart Dots Lock Cracker (Command Line Version)
 
 #### Introduction
 

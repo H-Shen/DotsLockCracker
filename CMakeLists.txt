@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.24)
-project(DotLockCracker VERSION 0.0.1)
+project(DotsLockCracker VERSION 0.0.1)
 
 message(STATUS "The CMAKE_VERSION is ${CMAKE_VERSION}")
 message(STATUS "PROJECT_VERSION_MAJOR = ${PROJECT_VERSION_MAJOR}")
@@ -21,4 +21,4 @@ message(STATUS "The CMAKE_C_FLAGS is ${CMAKE_C_FLAGS}")
 message(STATUS "The CMAKE_CXX_FLAGS is ${CMAKE_CXX_FLAGS}")
 message(STATUS "The CMAKE_EXE_LINKER_FLAGS is ${CMAKE_EXE_LINKER_FLAGS}")
 
-add_executable(DotLockCracker main.cpp)
+add_executable(DotsLockCracker main.cpp)
