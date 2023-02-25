@@ -1,0 +1,24 @@
+cmake_minimum_required(VERSION 3.24)
+project(DotLockCracker VERSION 0.0.1)
+
+message(STATUS "The CMAKE_VERSION is ${CMAKE_VERSION}")
+message(STATUS "PROJECT_VERSION_MAJOR = ${PROJECT_VERSION_MAJOR}")
+message(STATUS "PROJECT_VERSION_MINOR = ${PROJECT_VERSION_MINOR}")
+message(STATUS "PROJECT_VERSION_PATCH = ${PROJECT_VERSION_PATCH}")
+
+message(STATUS "The current binary directory is ${CMAKE_CURRENT_BINARY_DIR}.")
+message(STATUS "The current source directory is ${CMAKE_CURRENT_SOURCE_DIR}.")
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_CXX_FLAGS "-Wall -Wextra")
+set(CMAKE_CXX_FLAGS_DEBUG "-g")
+set(CMAKE_CXX_FLAGS_RELEASE "-O2")
+
+message(STATUS "The CMAKE_C_COMPILER is ${CMAKE_C_COMPILER}")
+message(STATUS "The CMAKE_CXX_COMPILER is ${CMAKE_CXX_COMPILER}")
+message(STATUS "The CMAKE_C_FLAGS is ${CMAKE_C_FLAGS}")
+message(STATUS "The CMAKE_CXX_FLAGS is ${CMAKE_CXX_FLAGS}")
+message(STATUS "The CMAKE_EXE_LINKER_FLAGS is ${CMAKE_EXE_LINKER_FLAGS}")
+
+add_executable(DotLockCracker main.cpp)
