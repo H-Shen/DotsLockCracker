@@ -2,7 +2,7 @@
 
 #### Introduction
 
-This is a Command Line version of an app that helps players unlock dots lock quickly in **Atomic Heart**.
+This is a Command Line version of an app that helps players unlock dots lock quickly in the game **Atomic Heart**.
 The user needs to input two arrays that represent the original pattern and the target pattern of the lock,
 and the app will output one possible sequence of the shortest path to unlock the lock by
 pressing the corresponding sequence of keys on the PS5 controller.
