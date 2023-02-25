@@ -39,7 +39,7 @@ Just follow the sequence to unlock.
 #### Notice
 
 * To make the app support the game on other platforms, the user can modify the key mappings in the source code and re-build.
-* To build, make sure you have CMake (version>=3.24) installed.
+* To build, make sure you have CMake (version>=3.18) installed.
 
 #### Author
 
