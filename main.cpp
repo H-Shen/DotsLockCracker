@@ -90,7 +90,7 @@ std::vector<std::pair<std::array<int, N>, std::string_view>> get_path() {
 
 inline
 bool valid_array(const std::string &pattern, std::array<int, N> &arr) {
-    if (static_cast<int>(pattern.size()) == N && std::all_of(pattern.begin(), pattern.end(), [](const char& ch){
+    if (static_cast<int>(pattern.size()) == N && std::all_of(pattern.begin(), pattern.end(), [](const char &ch) {
         return ch >= '0' && ch <= '0' + N;
     })) {
         for (int i = 0; i < N; ++i) {
@@ -100,20 +100,19 @@ bool valid_array(const std::string &pattern, std::array<int, N> &arr) {
 }
 
 inline
-bool valid_arguments(int argc, char** argv) {
+bool valid_arguments(int argc, char **argv) {
     return argc == 3 && valid_array(argv[1], original_pattern) && valid_array(argv[2], target_pattern);
 }
 
 
 // Usage:   ./DotsLockCracker [original pattern] [target pattern]
 // Example: ./DotsLockCracker 30000013 03100030
-int main(int argc, char** argv) {
+int main(int argc, char **argv) {
     // Suppose each number represents a color in the slot, input the colors clockwise from 12 o'clock as an array
     // You can use any number from 0-8 to represent a color, for example, 0 for no-color, 1 for yellow, 2 for blue, 3 for red, etc.
     // You need give the app two arrays to present the original pattern and the target pattern
 
-    // The arrays can be given in two ways, one is passing two arrays as two separated strings as arguments,
-    // or you can follow the prompt
+    // The arrays are passing as two separated strings as arguments.
     if (!valid_arguments(argc, argv)) {
         std::cerr << "Invalid arguments." << std::endl;
         std::cerr << "Usage: " << argv[0] << " [original pattern] [target pattern]" << std::endl;
