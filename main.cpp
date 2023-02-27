@@ -96,7 +96,9 @@ bool valid_array(const std::string &pattern, std::array<int, N> &arr) {
         for (int i = 0; i < N; ++i) {
             arr[i] = pattern[i] - '0';
         }
+        return true;
     }
+    return false;
 }
 
 inline
