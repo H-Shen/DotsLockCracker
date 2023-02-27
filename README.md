@@ -27,6 +27,17 @@ the status of the slot in the 12 o'clock direction.
 For example, the original pattern of the lock below is **3 0 0 0 0 0 1 3**, and the target pattern is on the outer round of the lock,
 which is **0 3 1 0 0 0 3 0** here:
 
+#### Build (Optional)
+
+To build the app yourself, for example on a linux-amd64 machine, do the following in the main directory:
+
+```shell
+# make sure cmake >= 3.18 and g++ supports C++17 installed
+cmake .
+make
+./DotsLockCracker 30000013 03100030
+```
+
 ![png](./1.png)
 
 After inputting the two patterns, the app will print out the number of steps required on the shortest path,
@@ -39,7 +50,7 @@ Just follow the sequence to unlock.
 #### Notice
 
 * To make the app support the game on other platforms, the user can modify the key mappings in the source code and re-build.
-* To build, make sure you have CMake (version>=3.18) installed.
+* To build, make sure you have CMake (version>=3.18) and C++ Compiler that supports C++ 17 standards installed.
 
 #### Author
 

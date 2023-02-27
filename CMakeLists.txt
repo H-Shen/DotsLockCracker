@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.18)
-project(DotsLockCracker VERSION 0.0.1)
+project(DotsLockCracker VERSION 0.0.2)
 
 message(STATUS "The CMAKE_VERSION is ${CMAKE_VERSION}")
 message(STATUS "PROJECT_VERSION_MAJOR = ${PROJECT_VERSION_MAJOR}")
