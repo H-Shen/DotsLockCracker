@@ -22,3 +22,6 @@ message(STATUS "The CMAKE_CXX_FLAGS is ${CMAKE_CXX_FLAGS}")
 message(STATUS "The CMAKE_EXE_LINKER_FLAGS is ${CMAKE_EXE_LINKER_FLAGS}")
 
 add_executable(DotsLockCracker main.cpp)
+
+include(CTest)
+add_test(NAME test1 COMMAND DotsLockCracker 30000013 03100030)
