@@ -32,7 +32,7 @@ which is **0 3 1 0 0 0 3 0** here:
 To build the app yourself, for example on a linux-amd64 machine, do the following in the main directory:
 
 ```shell
-# make sure cmake >= 3.18 and g++ supports C++17 installed
+# make sure cmake >= 3.18 and GCC/LLVM that supports C++17 installed
 cmake .
 make
 ./DotsLockCracker 30000013 03100030
@@ -54,4 +54,4 @@ Just follow the sequence to unlock.
 
 #### Author
 
-Harrison S
+HS
